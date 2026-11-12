@@ -1,0 +1,18 @@
+
+{
+  "name": "devflow",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack team project management and collaboration platform",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace=@devflow/web",
+    "dev:api": "npm run dev --workspace=@devflow/api",
+    "build:web": "npm run build --workspace=@devflow/web",
+    "build:api": "npm run build --workspace=@devflow/api",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  }
+}
