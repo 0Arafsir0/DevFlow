@@ -1,0 +1,44 @@
+
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Build outputs
+dist/
+build/
+coverage/
+.next/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+
+# Testing
+playwright-report/
+test-results/
+
+# Local database and Docker data
+data/
+*.sqlite
+*.db
+
+# Temporary files
+tmp/
+temp/
